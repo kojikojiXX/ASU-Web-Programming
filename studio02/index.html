@@ -19,13 +19,14 @@ YOUR NAME: Koji Nohara
 <h1>A new way to vote</h1>
 <p>Why be limited to voting for only one candidate?</p>
 
-<!-- ul element present lists of item -->
+<!-- ul element present lists of item.
+Need to write name value on radio buttun -->
 <fieldset>
    <legend>A ballot using plurality voting</legend>
    <ul>
-      <li><label><input type="radio">Woodrow Wilson</label></li>
-      <li><label><input type="radio">Theodore Roosevelt</label></li>
-      <li><label><input checked="checked" type="radio">William Howard Taft</label></li>
+      <li><label><input name="plurality-ballot" type="radio">Woodrow Wilson</label></li>
+      <li><label><input name="plurality-ballot" type="radio">Theodore Roosevelt</label></li>
+      <li><label><input checked="checked" name="plurality-ballot" type="radio">William Howard Taft</label></li>
    </ul>
 </fieldset>
 
@@ -55,9 +56,9 @@ YOUR NAME: Koji Nohara
 <table>
    <caption>1912 presidential election</caption>
    <tr>
-      <th>candidate</th>
-      <th>actual popular vote</th>
-      <th>hypothetial approval vote</th>
+      <th scope="col">candidate</th>
+      <th scope="col">actual popular vote</th>
+      <th scope="col">hypothetial approval vote</th>
    </tr>
    <tr>
       <td>Theodore Roosevelt</td><!-- I wanna make space after name -->
@@ -77,9 +78,11 @@ YOUR NAME: Koji Nohara
 </table>
 
 <!--  -->
-<p>
-   Enter your e-mail address to receive updates on this issue: &nbsp;<input type="text">
-   <button>Add me!</button>
-</p>
+<label>
+   <p>
+      Enter your e-mail address to receive updates on this issue: &nbsp;<input type="text">
+      <button type="button">Add me!</button>
+   </p>
+</label>
 
 </body></html>
