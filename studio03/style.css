@@ -17,3 +17,18 @@ html {
 }
 
 /* Add your CSS rules below. */
+h1 {
+   text-align: center;
+}
+
+.across {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.across div {
+   border-color: rgb(0, 0, 0);
+   border-style: solid;
+   border-width: 1px;
+}
