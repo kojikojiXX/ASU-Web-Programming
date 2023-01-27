@@ -17,6 +17,10 @@ html {
 }
 
 /* Add your CSS rules below. */
+body {
+
+}
+
 h1 {
    text-align: center;
 }
@@ -31,4 +35,14 @@ h1 {
    border-color: rgb(0, 0, 0);
    border-style: solid;
    border-width: 1px;
+   padding: 10px;
 }
+
+/* first-across */
+.baseball-stats {
+   border-color: black;
+   border-style: solid;
+   border-width: 2px;
+}
+
+/* second-across */
