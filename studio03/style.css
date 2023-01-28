@@ -18,7 +18,7 @@ html {
 
 /* Add your CSS rules below. */
 body {
-
+   font-family: serif, sans-serif, monospace, cursive or fantasy;
 }
 
 h1 {
@@ -32,24 +32,40 @@ h1 {
 }
 
 .across div {
-   border-color: rgb(0, 0, 0);
+   border-color: rgb(62, 165, 230);
    border-style: solid;
-   border-width: 1px;
+   border-width: 5px;
    padding: 10px;
 }
 
 /* first-across */
-.baseball-stats {
+/* .baseball-stats {
    border-color: black;
    border-style: solid;
    border-width: 2px;
-}
+} */
 
 /* second-across */
 
 /* style in a table */
 .baseball-stats {
+   border-color: black;
+   border-style: solid;
+   border-width: 2px;
+   border-collapse: collapse;
    background-color: rgb(255, 225, 240);
+   text-align: center;
+}
+
+.baseball-stats td,
+.baseball-stats th {
+   font-size: 80%;
+   font-weight: 500;
+   border-color: white;
+   border-style: solid;
+   border-width: 1.5px;
+   padding: 5px;
+   margin: 0px;
 }
 
 .baseball-stats tr:nth-child(2n+2) {
