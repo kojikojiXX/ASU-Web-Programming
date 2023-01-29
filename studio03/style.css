@@ -43,6 +43,10 @@ p::first-letter {
    font-size: 200%;
 }
 
+li {
+   border-color: red;
+}
+
 .across {
    display: flex;
    justify-content: space-evenly;
@@ -58,6 +62,23 @@ p::first-letter {
    /* A shadow outside the box */
    box-shadow: 3px 3px 15px black;
    border-radius: 20px 0 20px 0;
+}
+
+.across:nth-of-type(2) > div {
+   display: flex;
+   flex-direction: column;
+   padding: 15px;
+}
+
+.across div div {
+   border-style: solid;
+   border-color: tomato;
+   box-shadow: 3px 3px 8px black;
+   margin-bottom: 10px;
+}
+
+.across div:nth-child(4) {
+   margin-bottom: 0;
 }
 
 /* first-across */
