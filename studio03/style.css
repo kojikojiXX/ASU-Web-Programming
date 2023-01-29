@@ -47,7 +47,7 @@ fieldset {
    border-style: dashed;
    border-width: 5px;
    border-color: rgb(192, 0, 80);
-   border-radius: 3%;
+   border-radius: 2%;
 }
 
 fieldset > ul {
