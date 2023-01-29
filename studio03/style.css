@@ -43,8 +43,23 @@ p::first-letter {
    font-size: 200%;
 }
 
-li {
-   border-color: red;
+fieldset {
+   border-style: dashed;
+   border-width: 5px;
+   border-color: rgb(192, 0, 80);
+   border-radius: 3%;
+}
+
+fieldset > ul {
+   margin: 15px 0;
+}
+
+legend {
+   border-style: solid;
+   border-width: 5px;
+   border-color: rgb(192, 0, 80);
+   border-radius: 10%;
+   padding: 3px 3px;
 }
 
 .across {
