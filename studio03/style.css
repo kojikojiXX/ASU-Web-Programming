@@ -90,6 +90,7 @@ legend {
    border-color: tomato;
    box-shadow: 3px 3px 8px black;
    margin-bottom: 10px;
+   width: fit-content;
 }
 
 .across div:nth-child(4) {
