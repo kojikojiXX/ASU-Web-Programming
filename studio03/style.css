@@ -96,6 +96,17 @@ legend {
    margin-bottom: 0;
 }
 
+.fancy {
+   padding: 14px;
+   border-top-color: rgb(19, 87, 11);
+   border-bottom-color: rgb(74, 28, 17);
+   border-left-color: rgb(38, 14, 8);
+   border-right-color: rgb(38, 14, 8);
+   border-width: 8px;
+   border-radius: 25px;
+   box-shadow: inset 0px 5px 8px  rgb(19, 87, 11), inset 5px 0px 8px rgb(38, 14, 8), inset -5px 0px 8px rgb(38, 14, 8), inset 0px -5px 8px rgb(74, 28, 17);
+}
+
 /* first-across */
 /* .baseball-stats {
    border-color: black;
