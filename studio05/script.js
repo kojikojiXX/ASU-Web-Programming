@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
    // Each little web app is hidden from the others using an IIFE.
    (function () {
       // Do not declare any other variables here, but you may declare variables inside your function.
+      let divisor;
 
       // WRITE YOUR isPrime FUNCTION HERE
       const inPrime = function (numSides) {
@@ -18,6 +19,12 @@ document.addEventListener('DOMContentLoaded', function () {
             return false;
          };
 
+         for (divisor = 2; divisor <= numSides - 1; divisor += 1) {
+            if (numSides % divisor === 0){
+               return false;
+            }
+         }
+         return true;
       };
 
       // The report function is hidden from the isPrime function using an IIFE.
