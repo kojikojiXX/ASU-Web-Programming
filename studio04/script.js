@@ -6,8 +6,9 @@
 
 // All the code below will be run once the page content finishes loading.
 document.addEventListener("DOMContentLoaded", function () {
-  "use strict";
 
-  // Add your JavaScript code here.
+   "use strict";
+
+   // Add your JavaScript code here.
 
 });
