@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
          // When the number is changed at all, immediately . . .
          document.querySelector('#primality-input').addEventListener('input', function () {
             // . . . call the report function and pass it the user's value.
-            report(parseInt(document.querySelector('#primality-input').value, 10));
+            document.querySelector('#prime-or-not').textContent = report(parseInt(document.querySelector('#primality-input').value, 10)).toString();
          });
       }());
    }());
