@@ -57,6 +57,19 @@ document.addEventListener('DOMContentLoaded', function () {
       // Do not declare any other variables here, but you may declare variables inside your function.
 
       // WRITE YOUR fibonacci FUNCTION HERE
+      const fibonacci = function (n) {
+         if (n >= 0) {
+            if (n < 2) {
+               return n;
+            } else {
+               return fibonacci(n - 2) + fibonacci(n - 1);
+            }
+         } else {
+            return 0;
+         }
+      }
+
+      console.log(fibonacci(6))
 
       // Do things when the "Calculate it" button is clicked.
       document.querySelector('#calculate-fibonacci').addEventListener('click', function () {
