@@ -14,11 +14,10 @@ document.addEventListener('DOMContentLoaded', function () {
       let divisor;
 
       // WRITE YOUR isPrime FUNCTION HERE
-      const inPrime = function (numSides) {
+      const isPrime = function (numSides) {
          if (!Number.isInteger(numSides) || numSides < 2) {
             return false;
          };
-
          for (divisor = 2; divisor <= numSides - 1; divisor += 1) {
             if (numSides % divisor === 0){
                return false;
@@ -32,6 +31,17 @@ document.addEventListener('DOMContentLoaded', function () {
          // Do not declare any other variables here, but you may declare variables inside your function.
 
          // WRITE YOUR report FUNCTION HERE
+         const report = function (num) {
+            if (!Number.isFinite(num)) {
+               return 'not a number';
+            }
+
+            if (isPrime(num)) {
+               return 'prime';
+            } else {
+               return 'not prime';
+            }
+         };
 
          // Call the report function even before there's a value to use.
          report();
