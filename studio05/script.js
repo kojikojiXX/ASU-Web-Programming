@@ -69,8 +69,6 @@ document.addEventListener('DOMContentLoaded', function () {
          }
       }
 
-      console.log(fibonacci(6))
-
       // Do things when the "Calculate it" button is clicked.
       document.querySelector('#calculate-fibonacci').addEventListener('click', function () {
          // Get the user's number.
