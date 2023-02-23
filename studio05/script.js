@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const isPrime = function (numSides) {
          if (!Number.isInteger(numSides) || numSides < 2) {
             return false;
-         };
+         }
          for (divisor = 2; divisor <= numSides - 1; divisor += 1) {
             if (numSides % divisor === 0){
                return false;
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
          } else {
             return 0;
          }
-      }
+      };
 
       // Do things when the "Calculate it" button is clicked.
       document.querySelector('#calculate-fibonacci').addEventListener('click', function () {
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function () {
             return '';
          } else {
             return reverseString(str.slice(1)) + str.charAt(0);
-         };
+         }
       };
 
       (function () {
