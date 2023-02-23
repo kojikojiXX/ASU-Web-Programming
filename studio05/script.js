@@ -83,6 +83,13 @@ document.addEventListener('DOMContentLoaded', function () {
       // Do not declare any other variables here, but you may declare variables inside your function.
 
       // WRITE YOUR reverseString FUNCTION HERE
+      const reverseString = function (str) {
+         if (typeof str !== 'string' || str.length === 0 ) {
+            return '';
+         } else {
+            return reverseString(str.slice(1)) + str.charAt(0);
+         };
+      };
 
       (function () {
          const reversalInputElement = document.querySelector('#reversal-input');
