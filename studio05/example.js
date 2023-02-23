@@ -237,3 +237,17 @@ document.addEventListener('DOMContentLoaded', function () {
    }());
 
 });
+
+// In class
+
+player.name = {
+   first: 'Matt',
+   last: 'Chap'
+};
+Object.keys(player).foreach(function (propName) {
+   outputElement.value += propNmae + ': ' + player[propName] + '¥n'
+});
+outputElement.value += '---¥n';
+
+outputElement.value += JSON.stringify(player) + '¥n';
+outputElement.value += '---¥n';
