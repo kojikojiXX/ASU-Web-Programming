@@ -251,3 +251,43 @@ outputElement.value += '---¥n';
 
 outputElement.value += JSON.stringify(player) + '¥n';
 outputElement.value += '---¥n';
+
+player.getFullName = function() {
+   return player.name.first + ' ' + player.name.last
+};
+
+outputElement.value += 'player.getFullName(): ' + player.getFullName()
+Object.keys(player).forEach(function (propName) {
+   outputElement.value += propNmae + ': ' + player[propName] + '¥n'
+});
+outputElement.value += JSON.stringify(player) + '¥n';
+outputElement.value += '---¥n';
+
+const createPlayer = function(args) {
+   const newPlayer = {
+      firstName: 'Matt',
+      lastName: 'Chapman',
+      uniformNumber: 26,
+      position: 5,
+      onBaseAverage: 0.356
+   };
+   Object.keys(newPlayer).forEach(function (propName) {
+      if (Object.hasOwn(args, propName)) {
+         newPlayer[propName] = args[propName];
+      }
+   });
+   // return newPlayer;
+   return Object.freeze(newPlayer);
+};
+
+player = createPlayer ({
+   lastName: 'carpenter',
+   uniformNumber: 13,
+   onBaseAverage: 0.374,
+   garbage: 'whatever'
+});
+Object.keys(player).forEach(function (propName) {
+   outputElement.value += propNmae + ': ' + player[propName] + '¥n'
+});
+outputElement.value += JSON.stringify(player) + '¥n';
+outputElement.value += '---¥n';
